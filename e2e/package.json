@@ -1,0 +1,62 @@
+{
+  "name": "e2e",
+  "private": true,
+  "author": "Merlijn Vos <merlijn@soverin.net>",
+  "description": "E2E test suite for JSIMg",
+  "scripts": {
+    "client:start": "parcel --no-autoinstall clients/index.html",
+    "cypress:open": "cypress open",
+    "cypress:headless": "cypress run",
+    "generate-test": "yarn node generate-test.mjs"
+  },
+  "dependencies": {
+    "@JSIMg/audio": "workspace:^",
+    "@JSIMg/aws-s3": "workspace:^",
+    "@JSIMg/aws-s3-multipart": "workspace:^",
+    "@JSIMg/box": "workspace:^",
+
+    "@JSIMg/drop-target": "workspace:^",
+    "@JSIMg/dropbox": "workspace:^",
+    "@JSIMg/golden-retriever": "workspace:^",
+    "@JSIMg/google-drive": "workspace:^",
+    "@JSIMg/facebook": "workspace:^",
+    "@JSIMg/file-input": "workspace:^",
+    "@JSIMg/form": "workspace:^",
+    "@JSIMg/image-editor": "workspace:^",
+    "@JSIMg/companion-client": "workspace:^",
+    "@JSIMg/core": "workspace:^",
+    "@JSIMg/dashboard": "workspace:^",
+    "@JSIMg/drag-drop": "workspace:^",
+    "@JSIMg/informer": "workspace:^",
+    "@JSIMg/instagram": "workspace:^",
+    "@JSIMg/onedrive": "workspace:^",
+    "@JSIMg/progress-bar": "workspace:^",
+    "@JSIMg/provider-views": "workspace:^",
+    "@JSIMg/screen-capture": "workspace:^",
+    "@JSIMg/status-bar": "workspace:^",
+    "@JSIMg/store-default": "workspace:^",
+    "@JSIMg/store-redux": "workspace:^",
+    "@JSIMg/thumbnail-generator": "workspace:^",
+    "@JSIMg/transloadit": "workspace:^",
+    "@JSIMg/tus": "workspace:^",
+    "@JSIMg/unsplash": "workspace:^",
+    "@JSIMg/url": "workspace:^",
+    "@JSIMg/webcam": "workspace:^",
+    "@JSIMg/xhr-upload": "workspace:^",
+    "@JSIMg/zoom": "workspace:^"
+  },
+  "devDependencies": {
+    "parcel": "^2.9.3",
+    "process": "^0.11.10",
+    "prompts": "^2.4.2",
+    "react": "^18.1.0",
+    "@parcel/transformer-vue": "^2.9.3",
+    "cypress": "^13.0.0",
+    "cypress-terminal-report": "^5.0.0",
+    "deep-freeze": "^0.0.1",
+
+    "react-dom": "^18.1.0",
+    "typescript": "~5.1",
+    "vue": "^3.2.33"
+  }
+}
