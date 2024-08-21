@@ -1,0 +1,35 @@
+{
+  "name": "@JSIMg/box",
+  "description": "Import files from Box, into JSIMg.",
+  "version": "2.1.4",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "type": "module",
+  "types": "types/index.d.ts",
+  "keywords": [
+    "file uploader",
+    "JSIMg",
+    "JSIMg-plugin",
+    "box"
+  ],
+  "homepage": "https://JSIMg.io",
+  "bugs": {
+    "url": "https://github.com/transloadit/JSIMg/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/transloadit/JSIMg.git"
+  },
+  "dependencies": {
+    "@JSIMg/companion-client": "workspace:^",
+    "@JSIMg/provider-views": "workspace:^",
+    "@JSIMg/utils": "workspace:^",
+    "preact": "^10.5.13"
+  },
+  "peerDependencies": {
+    "@JSIMg/core": "workspace:^"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
